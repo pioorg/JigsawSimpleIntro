@@ -22,7 +22,7 @@ public class App {
 
         ReflectionDemo reflectionDemo = new ReflectionDemo();
         reflectionDemo.demoReflectionWithExportedPackage();
-        reflectionDemo.demoReflectionWithNonExportedPackage();
+//        reflectionDemo.demoReflectionWithNonExportedPackage();
         reflectionDemo.demoReflectionWith3rdParty();
 
         printThreeRandomNumbers();
