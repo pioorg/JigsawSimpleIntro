@@ -41,9 +41,13 @@ dependencies {
 }
 
 apply plugin: 'application'
-//mainClassName = "$moduleName/org.company.modularApp.App"
-mainClassName = "org.company.modularApp.App"
 
+
+
+mainClassName = "$moduleName/org.company.modularApp.App"
+//mainClassName = "org.company.modularApp.App"
+
+//import org.javamodularity.moduleplugin.tasks.ModularJavaExec
 //task runApp(type: ModularJavaExec) {
 //    group = "application"
 //    description = "run the modular app"
