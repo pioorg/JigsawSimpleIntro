@@ -25,7 +25,7 @@ public class App {
         reflectionDemo.demoReflectionWithNonExportedPackage();
         reflectionDemo.demoReflectionWith3rdParty();
 
-//        printThreeRandomNumbers();
+        printThreeRandomNumbers();
 //        printHowLongRunning(reflectionDemo);
 
     }
