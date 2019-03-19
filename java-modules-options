@@ -1,0 +1,1 @@
+--add-opens org.company.utils/org.company.utils.internal=org.company.modularApp

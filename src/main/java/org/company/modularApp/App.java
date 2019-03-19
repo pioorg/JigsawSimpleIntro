@@ -18,11 +18,11 @@ public class App {
 
         System.out.println(stringUtils.greet(String.valueOf(processUtils.getPid())));
 
-//        processUtils.printArguments();
+        processUtils.printArguments();
 
         ReflectionDemo reflectionDemo = new ReflectionDemo();
         reflectionDemo.demoReflectionWithExportedPackage();
-//        reflectionDemo.demoReflectionWithNonExportedPackage();
+        reflectionDemo.demoReflectionWithNonExportedPackage();
         reflectionDemo.demoReflectionWith3rdParty();
 
         printThreeRandomNumbers();

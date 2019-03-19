@@ -53,3 +53,10 @@ mainClassName = "$moduleName/org.company.modularApp.App"
 //    description = "run the modular app"
 //    main = "$moduleName/org.company.modularApp.App"
 //}
+
+compileJava {
+    options.compilerArgs += []
+}
+run {
+    jvmArgs += ["--add-opens", "org.company.utils/org.company.utils.internal=org.company.modularApp"]
+}
