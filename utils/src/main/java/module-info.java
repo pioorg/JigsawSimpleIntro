@@ -1,6 +1,6 @@
 module org.company.utils {
     requires java.base;
     requires com.google.common;
-    requires java.management;
+    requires transitive java.management;
     exports org.company.utils;
 }
