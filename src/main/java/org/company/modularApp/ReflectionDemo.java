@@ -7,7 +7,6 @@ import org.company.utils.StringUtils;
 
 import java.lang.management.ManagementFactory;
 import java.lang.management.RuntimeMXBean;
-import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 
@@ -22,12 +21,12 @@ public class ReflectionDemo {
             Class<?> stringUtilsClass = Class.forName(className);
             var instance = stringUtilsClass.getConstructor().newInstance();
             System.out.println("I've just created: " + instance);
-            Field createdField = stringUtilsClass.getDeclaredField("created");
-            createdField.setAccessible(true);
-            var whenCreated = createdField.get(instance);
-            System.out.println("And it was created at: " + whenCreated);
+//            Field createdField = stringUtilsClass.getDeclaredField("created");
+//            createdField.setAccessible(true);
+//            var whenCreated = createdField.get(instance);
+//            System.out.println("And it was created at: " + whenCreated);
 
-        } catch (IllegalAccessException | ClassNotFoundException | InvocationTargetException | InstantiationException | NoSuchMethodException | NoSuchFieldException e) {
+        } catch (IllegalAccessException | ClassNotFoundException | InvocationTargetException | InstantiationException | NoSuchMethodException /*| NoSuchFieldException*/ e) {
             e.printStackTrace();
         }
     }
