@@ -27,7 +27,7 @@ allprojects {
 
 
     dependencies {
-        implementation files('libs/guava-27.1-jre.jar')
+//        implementation files('libs/guava-27.1-jre.jar')
     }
 }
 

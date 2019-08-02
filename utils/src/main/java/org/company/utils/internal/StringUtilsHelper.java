@@ -7,7 +7,9 @@ import java.time.Instant;
  */
 public class StringUtilsHelper {
     private final Instant created = Instant.now();
+
     public String prepareGreeting(String name) {
-        return "EHLO, ME: [" + com.google.common.base.Strings.padStart(name, 8, ' ') + "]";
+//        return "EHLO, ME: [" + com.google.common.base.Strings.padStart(name, 8, ' ') + "]";
+        return "EHLO, ME: [" + String.format("%8s", name) + "]";
     }
 }
